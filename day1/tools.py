@@ -18,5 +18,5 @@ def translate_words_to_numbers(line: str) -> int:
     for key in lookup:
         if (pos := line.find(key)) != -1:
             prefix, suffix = line[:pos], line[pos+len(key):]
-            line = "".join([prefix, str(lookup[key]), suffix])
+            line = "".join([prefix, key[0], str(lookup[key]), key[-1], suffix])
     return line

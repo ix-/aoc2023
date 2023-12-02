@@ -14,7 +14,7 @@ def get_coordinates(line: str) -> int:
     return int(line_parser(line)[0]+line_parser(line)[-1])
 
 def day1(filename: str) -> int:
-    sum(
+    return sum(
         [line for line in apply_func_line_by_line(filename, get_coordinates)]
     )
 
