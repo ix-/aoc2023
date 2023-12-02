@@ -18,5 +18,26 @@ def test_a1b2c3d4e5f():
 def test_treb7uchet():
     assert helper("treb7uchet", 77)
 
+def test_two1nine():
+    assert helper("two1nine", 29)
+
+def test_eightwothree():
+    assert helper("eightwothree", 83)
+
+def test_abcone2threexyz():
+    assert helper("abcone2threexyz", 13)
+
+def test_xtwone3four():
+    assert helper("xtwone3four", 24)
+
+def test_4nineeightseven2():
+    assert helper("4nineeightseven2", 42)
+
+def test_zoneight234():
+    assert helper("zoneight234", 14)
+
+def test_7pqrstsixteen():
+    assert helper("7pqrstsixteen", 76)
+
 def test_day1():
-    assert day1("tests/test_file.txt") == 142
+    assert day1("tests/test_file.txt") == 281
