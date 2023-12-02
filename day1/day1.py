@@ -19,4 +19,4 @@ def day1(filename: str) -> int:
     )
 
 if __name__ == "__main__":
-    print(f"Day 1: {day1_1('day1.txt')}")
+    print(f"Day 1: {day1('day1.txt')}")
