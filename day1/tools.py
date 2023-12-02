@@ -16,7 +16,14 @@ def translate_words_to_numbers(line: str) -> int:
               "nine": 9,
              }
     for key in lookup:
-        if (pos := line.find(key)) != -1:
+        positions = findall(line, key)
+        for pos in positions:
             prefix, suffix = line[:pos], line[pos+len(key):]
             line = "".join([prefix, key[0], str(lookup[key]), key[-1], suffix])
     return line
+
+def findall(line, substring):
+    pos = line.find(substring)
+    while pos != -1:
+        yield pos
+        pos = line.find(substring, pos+1)
