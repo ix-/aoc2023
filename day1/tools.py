@@ -18,7 +18,7 @@ def translate_words_to_numbers(line: str) -> int:
     for key in lookup:
         positions = findall(line, key)
         for pos in positions:
-            prefix, suffix = line[:pos], line[pos+len(key):]
+            prefix, suffix = line[:pos], line[pos+len(key)-1:]
             line = "".join([prefix, key[0], str(lookup[key]), key[-1], suffix])
     return line
 

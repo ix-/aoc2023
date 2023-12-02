@@ -55,5 +55,8 @@ def test_fiveeight3sppjtccnineeighteightnffgtlsdj():
 def test_threethreetwothree():
     assert get_coordinates("threethreetwothree") == 33
 
+def test_five4five4():
+    assert get_coordinates("five4five4") == 54
+
 def test_day1():
     assert day1("tests/test_file.txt") == 281
