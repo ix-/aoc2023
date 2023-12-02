@@ -1,4 +1,4 @@
-from ..day1_1 import get_coordinates, day1_1
+from ..day1 import get_coordinates, day1
 
 def helper(input_string, output_string):
     return get_coordinates(input_string) == output_string
@@ -18,5 +18,5 @@ def test_a1b2c3d4e5f():
 def test_treb7uchet():
     assert helper("treb7uchet", 77)
 
-def test_day1_1():
-    assert day1_1("tests/test_file.txt") == 142
+def test_day1():
+    assert day1("tests/test_file.txt") == 142

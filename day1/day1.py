@@ -8,8 +8,8 @@ def line_parser(line: str) -> str:
 def get_coordinates(line: str) -> int:
     return int(line_parser(line)[0]+line_parser(line)[-1])
 
-def day1_1(filename: str) -> int:
+def day1(filename: str) -> int:
     return sum([line for line in apply_func_line_by_line(filename, get_coordinates)])
 
 if __name__ == "__main__":
-    print(f"Day 1.1: {day1_1('day1_1.txt')}")
+    print(f"Day 1: {day1_1('day1.txt')}")
